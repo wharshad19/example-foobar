@@ -1,0 +1,21 @@
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+    exclude_paths:
+      - foo_bar.rb
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+    exclude_paths:
+      - duplication.rb
+      - duplication_2.rb
+ratings:
+  paths:
+  - "**.rb"
+exclude_paths:
+  - spec/
