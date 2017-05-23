@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/example-foobar
+    docker:
+      - image: ruby:2.4
+        environment:
+          CODECLIMATE_REPO_TOKEN: "dc868bc2a2cc797be5d1c41badf4c88fd59356d2127a7c7cd48837abd874efab"
+    steps:
+      - checkout
+      - type: cache-restore
+        key: example-foobar-{{ checksum "Gemfile.lock" }}
+      - run: bundle install --path vendor/bundle
+      - type: cache-save
+        key: example-foobar-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+      - run: bundle exec rspec && bundle exec codeclimate-test-reporter
