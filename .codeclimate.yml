@@ -2,5 +2,13 @@ plugins:
   fixme:
     enabled: true
 exclude_paths:
-- spec/
-- "**.rb" 
+- "**.rb"
+- "**.css"
+- "**.html"
+- "**/migrations/**"
+- "**/south_migrations/**"
+- "scratchpad/**"
+- "**/tests/**"
+- "settings/**"
+- "subprocess42.py"
+
