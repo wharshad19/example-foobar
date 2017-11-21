@@ -2,5 +2,4 @@ plugins:
   fixme:
     enabled: true
 exclude_paths:
-- "**.rb"
 - "**.js"
