@@ -1,6 +1,6 @@
 plugins:
   fixme:
     enabled: true
-exclude_patterns:
+exclude_paths:
 - spec/
 - "**.rb" 
