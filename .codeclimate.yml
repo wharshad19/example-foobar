@@ -3,3 +3,4 @@ plugins:
     enabled: true
 exclude_patterns:
 - spec/
+- "**.rb" 
