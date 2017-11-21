@@ -3,12 +3,4 @@ plugins:
     enabled: true
 exclude_paths:
 - "**.rb"
-- "**.css"
-- "**.html"
-- "**/migrations/**"
-- "**/south_migrations/**"
-- "scratchpad/**"
-- "**/tests/**"
-- "settings/**"
-- "subprocess42.py"
-
+- "**.js"
