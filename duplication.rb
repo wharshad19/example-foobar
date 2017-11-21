@@ -4,3 +4,33 @@ class Duplicated
     a + b + c + d / ( b * d / a) * (a / c) - (a * b * d * c * 100)
   end
 end
+
+class Duplicated
+  def impl_one(a, b, c, d)
+    a + b + c + d / ( b * d / a) * (a / c) - (a * b * d * c * 100)
+  end
+end
+
+class Duplicated
+  def impl_one(a, b, c, d)
+    a + b + c + d / ( b * d / a) * (a / c) - (a * b * d * c * 100)
+  end
+end
+
+class Duplicated
+  def impl_one(a, b, c, d)
+    a + b + c + d / ( b * d / a) * (a / c) - (a * b * d * c * 100)
+  end
+end
+
+class Duplicated
+  def impl_one(a, b, c, d)
+    a + b + c + d / ( b * d / a) * (a / c) - (a * b * d * c * 100)
+  end
+end
+
+class Duplicated
+  def impl_one(a, b, c, d)
+    a + b + c + d / ( b * d / a) * (a / c) - (a * b * d * c * 100)
+  end
+end
