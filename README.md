@@ -1,4 +1,4 @@
-Code Climate Lunch & Learn Exampleasdf
+Code Climate Lunch & Learn Example
 
 Example files: https://gist.github.com/dblandin/589e70345774298e1622850349c31876
 
@@ -34,7 +34,7 @@ status.
 
 1. Modify `spec/foo_bar_spec.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar_spec-rb) from gist
 
-1. Commit and push to your fork PR branch
+1. Commit and push to your fork PR branch 
 
     ```
     git add spec/foo_bar_spec.rb
