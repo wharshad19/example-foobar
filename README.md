@@ -7,7 +7,8 @@ Example files: https://gist.github.com/dblandin/589e70345774298e1622850349c31876
 ## Setup
 
 1. Install the Code Climate [browser extension](https://codeclimate.com/browser-extension)
-1. [Fork](https://github.com/codeclimate-demo/example-foobar#fork-destination-box) this project
+2. [Fork](https://github.com/davehenton/example-foobar) this project. 
+3. Import your new fork of the repo to Quality, using the `Open Source` section of the Quality UI.
 
 <img src="https://raw.githubusercontent.com/codeclimate-demo/example-foobar/master/screenshots/2017-05-23-052427_978x491_scrot.png" align="center" width="600" />
 
@@ -34,9 +35,10 @@ status.
 
 ## Add some test coverage
 
-1. Modify `spec/foo_bar_spec.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar_spec-rb) from gist
-
-1. Commit and push to your fork PR branch 
+1. Create a CircleCI user and add your repo via the CircleUI UI. 
+2. Update your CircleCI config file (`config.yml`) with your repo's Test Reporter ID. The Test Reporter ID is found in the Repo Settings in the Quality UI
+3. Modify `spec/foo_bar_spec.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar_spec-rb) from gist
+4. Commit and push to your fork PR branch 
 
     ```
     git add spec/foo_bar_spec.rb
