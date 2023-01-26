@@ -18,41 +18,31 @@ Example files: https://gist.github.com/dblandin/589e70345774298e1622850349c31876
 ## Introduce some complexity
 
 1. In the GitHub UI, modify `foo_bar.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar-rb) from gist
-2. When committing the changes, create a new branch titled `demo-branch` for the commit and start a pull request. 
-
+2. When committing the changes, create a new branch titled `demo-branch` for the commit and open a pull request. 
 
 You should now see a Cognitive Complexity issue reported by Code Climate as a PR status
 and via the browser extension. Test coverage reporting should also show
 uncovered lines via the browser extension and a drop in coverage via the `diff-coverage` and `total-coverage` statuses.
 
-<img src="https://raw.githubusercontent.com/codeclimate-demo/example-foobar/master/screenshots/2017-05-23-053352_1542x769_scrot.png" align="center" width="600" />
+![Screenshot 2023-01-25 at 7 45 55 PM](https://user-images.githubusercontent.com/18341459/214743756-2335f16e-794c-4456-9483-3fc45900e6c6.png)
 
-<img src="https://raw.githubusercontent.com/codeclimate-demo/example-foobar/master/screenshots/2017-05-23-053406_1810x1125_scrot.png" align="center" width="600" />
+![Screenshot 2023-01-25 at 7 48 42 PM](https://user-images.githubusercontent.com/18341459/214743971-6022fe0a-f7da-4ba6-b910-32f5954f858e.png)
+
+
 
 ## Add some test coverage
 
-1. Create a CircleCI user and add your repo via the CircleUI UI. 
-2. Update your repo's CircleCI config file (on your master branch) with your repo's Test Reporter ID. Commit the update to master without opening a pull request. The Test Reporter ID is found in the Repo Settings in the Quality UI.
-3. On your existing `demo-branch` branch, modify `spec/foo_bar_spec.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar_spec-rb) from gist
-4. Commit the update to `demo-branch`. 
+1. On your existing `demo-branch` branch, modify `spec/foo_bar_spec.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar_spec-rb) from gist
+2. Commit the update to `demo-branch`. 
 
-You should now see green annotations which show the lines that are now covered after you added those tests. 
-<img src="https://raw.githubusercontent.com/codeclimate-demo/example-foobar/master/screenshots/2017-05-23-053507_2560x1415_scrot.png" align="center" width="600" />
-<img src="https://raw.githubusercontent.com/codeclimate-demo/example-foobar/master/screenshots/2017-05-23-053532_1802x1070_scrot.png" align="center" width="600" />
+Your pull request should now show a smaller decrease in `total-coverage`, and a passing `diff-coverage` status.
+
+![Screenshot 2023-01-25 at 8 01 06 PM](https://user-images.githubusercontent.com/18341459/214744436-02029cbe-4e09-484a-867b-7bfded32282b.png)
+
 
 ## Introduce some duplication
 
-1. Modify `duplication.rb` and `duplication_2.rb` with [these](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-duplication-rb) [files](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-duplication_2-rb)
+1. On your existing `demo-branch` branch, modify `duplication.rb` and `duplication_2.rb` with [these](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-duplication-rb) [files](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-duplication_2-rb)
 
-1. Commit and push to your fork PR branch
+2. Commit to `demo-branch`. You should now see duplication issues reported by Code Climate.
 
-    ```
-    git add duplication.rb duplication_2.rb
-    git commit -m "Add duplication"
-    git push origin master
-    ```
-
-You should now see duplication issues reported by Code Climate.
-
-<img src="https://raw.githubusercontent.com/codeclimate-demo/example-foobar/master/screenshots/2017-05-23-053732_1798x983_scrot.png" align="center" width="600" />
-  
