@@ -20,13 +20,14 @@ Example files: https://gist.github.com/dblandin/589e70345774298e1622850349c31876
 1. In the GitHub UI, modify `foo_bar.rb` with [this content](https://gist.github.com/dblandin/589e70345774298e1622850349c31876#file-foo_bar-rb) from gist
 2. When committing the changes, create a new branch titled `demo-branch` for the commit and open a pull request. 
 
-You should now see a Cognitive Complexity issue reported by Code Climate as a PR status
-and via the browser extension. Test coverage reporting should also show
+You should now see a Cognitive Complexity issue reported by Quality as a PR status
+and via the browser extension on the diff. Test coverage reporting should also show
 uncovered lines via the browser extension and a drop in coverage via the `diff-coverage` and `total-coverage` statuses.
 
 ![Screenshot 2023-01-25 at 7 45 55 PM](https://user-images.githubusercontent.com/18341459/214743756-2335f16e-794c-4456-9483-3fc45900e6c6.png)
 
-![Screenshot 2023-01-25 at 7 48 42 PM](https://user-images.githubusercontent.com/18341459/214743971-6022fe0a-f7da-4ba6-b910-32f5954f858e.png)
+![uncovered2](https://user-images.githubusercontent.com/18341459/214745680-0439f858-6cfc-4976-879e-3370d64ac1e3.jpg)
+
 
 
 
@@ -38,6 +39,9 @@ uncovered lines via the browser extension and a drop in coverage via the `diff-c
 Your pull request should now show a smaller decrease in `total-coverage`, and a passing `diff-coverage` status.
 
 ![Screenshot 2023-01-25 at 8 01 06 PM](https://user-images.githubusercontent.com/18341459/214744436-02029cbe-4e09-484a-867b-7bfded32282b.png)
+
+The browser extension will also highlight the newly covered lines in `foo_bar.rb`. 
+![Screenshot 2023-01-25 at 8 29 32 PM](https://user-images.githubusercontent.com/18341459/214745367-1630cd55-37c7-4b4a-888b-64b1bae5e079.png)
 
 
 ## Introduce some duplication
