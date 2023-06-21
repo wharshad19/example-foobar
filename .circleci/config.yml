@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: ruby:2.4
         environment:
-          CC_TEST_REPORTER_ID: "7a8a3166a129a16c9e7f99981fbdcbb7e34a79164dbcd00648a191ee1aa15726"
+          CC_TEST_REPORTER_ID: "7448164f33a95c087f82553d9671e9fb6c0c53dd5acae00b7ad726acbbe955fc"
     steps:
       - checkout
       - type: cache-restore
